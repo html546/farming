@@ -1,0 +1,205 @@
+* {
+    color: #fff;
+    font-size: 16px;
+}
+
+@media screen and (min-width:320px) and (max-width:359px) and (orientation:portrait) {
+    html {
+        font-size: 625%;
+    }
+}
+
+@media screen and (min-width:360px) and (max-width:374px) and (orientation:portrait) {
+    html {
+        font-size: 703%;
+    }
+}
+
+@media screen and (min-width:375px) and (max-width:383px) and (orientation:portrait) {
+    html {
+        font-size: 732.4%;
+    }
+}
+
+@media screen and (min-width:384px) and (max-width:399px) and (orientation:portrait) {
+    html {
+        font-size: 750%;
+    }
+}
+
+@media screen and (min-width:400px) and (max-width:413px) and (orientation:portrait) {
+    html {
+        font-size: 781.25%;
+    }
+}
+
+@media screen and (min-width:414px) and (max-width:431px) and (orientation:portrait) {
+    html {
+        font-size: 808.6%;
+    }
+}
+
+@media screen and (min-width:432px) and (max-width:479px) and (orientation:portrait) {
+    html {
+        font-size: 843.75%;
+    }
+}
+
+html, body {
+    overflow-y: scroll;
+    padding-bottom: .4rem;
+}
+
+.box_1, .box {
+    display: block;
+    width: 100%;
+    position: relative;
+    height: 2.42rem;
+}
+
+.box_1:not(:last-of-type) {
+    margin-bottom: .05rem;
+}
+
+.profile {
+    background: url(../images/abstract01.png) no-repeat center;
+    background-size: cover;
+}
+
+.research {
+    background: url(../images/abstract02.png) no-repeat center;
+    background-size: cover;
+}
+
+.center {
+    background: url(../images/abstract03.png) no-repeat center;
+    background-size: cover;
+}
+
+.top_character {
+    width: .14px;
+    height: .5rem;
+    position: absolute;
+    left: .125rem;
+    top: .3rem;
+}
+
+.top_character p {
+    font-size: .12rem;
+    white-space: nowrap;
+}
+
+.top_character h4 {
+    font-size: .23rem;
+    white-space: nowrap;
+}
+
+.bottom_character {
+    background: url(../images/rectangle.png) no-repeat center;
+    background-size: cover;
+    width: 1.15rem;
+    height: .325rem;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.bottom_character p {
+    font-size: .16rem;
+    height: .325rem;
+    line-height: .325rem;
+    letter-spacing: .024rem;
+    text-indent: .12rem;
+}
+
+.content_title {
+    height: 1.17rem;
+    margin: .1rem;
+}
+.content_title h2 {
+    font-size: .24rem;
+    color: #000000;
+    text-indent: .1rem;
+}
+.content_title p {
+    font-size: .14rem;
+    color: #123883;
+    text-indent: .1rem;
+    margin-top: .225rem;
+}
+.content_title p span {
+    margin-left: .15rem;
+    color: #888888;
+    font-size: .12rem;
+}
+.content_substance {
+    margin: .15rem;
+    background: url(../images/content_bg.png) no-repeat center;
+    background-size: cover;
+    padding: .1rem;
+    box-sizing: border-box;
+}
+.content_1_title, .content_2_title, .content_3_title {
+    width: 2.4rem;
+    height: .24rem;
+    border: 1px solid #123883;
+    margin-bottom: .0425rem;
+    background: url(../images/rectangle2.png) no-repeat left center;
+    background-size: .9rem .24rem;
+    box-sizing: border-box;
+    position: relative;
+}
+.content_1_title p:before, .content_2_title p:before, .content_3_title p:before {
+    content: '公司简介';
+    position: absolute;
+    left: 0;
+    color: #fff;
+    font-size: .15rem;
+    line-height: .24rem;
+    text-indent: .06rem;
+    word-spacing:.02rem;
+    width:.875rem;
+}
+.content_2_title p:before {
+    content: '技术研发';
+}
+.content_3_title p:before {
+    content: '销售中心';
+}
+.content_1_title p:after, .content_2_title p:after, .content_3_title p:after {
+    content: 'Company introduction';
+    float: right;
+    line-height: .24rem;
+    font-size: .12rem;
+    color: #123883;
+    text-align: left;
+    width: calc(100% - .875rem);
+    white-space: nowrap;
+}
+.content_2_title p:after {
+    content: 'Technology research';
+}
+.content_3_title p:after {
+    content: 'Sales center';
+}
+.content_bg, .content2_bg, .content3_bg {
+    background: url(../images/content_bg2.png) no-repeat center;
+    background-size: 100% 1.225rem;
+    width: 100%;
+    height: 1.225rem;
+}
+.content2_bg {
+    background: url(../images/content_bg3.png) no-repeat center;
+    background-size: 100% 1.225rem;
+}
+.content3_bg {
+    background: url(../images/content_bg4.png) no-repeat center;
+    background-size: 100% 1.225rem;
+}
+.content_1 {
+    background: #fff;
+    color: #333333;
+    word-break: break-all;
+    padding:.032rem;
+    font-size: .14rem;
+}

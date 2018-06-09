@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>新闻发布</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/publish.css">
+    <link rel="stylesheet" href="../css/abstract.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/css/swiper.min.css">
+    <link rel="stylesheet" href="../css/navigate.css">
+</head>
+
+<body>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide slide1">
+                <p>我公司领导与植物营养专家沈宏教授会面座谈</p>
+            </div>
+        </div>
+    </div>
+    <div class="publish_content">
+        <a class="publish_content_1" v-for="item in contents" :href="item.href">
+            <img :src="item.img" alt="" class="content_left">
+            <div class="content_right">
+                <h3>{{item.title}}</h3>
+                <p>{{item.date}}</p>
+            </div>
+        </a>
+    </div>
+    <div class="navigate">
+        <a href="./index.html">
+        </a>
+        <a href="javascript:history.back(-1)"></a>
+        <a href="javascript:;" class="call"></a>
+        <a href="./location.html"></a>
+    </div>
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../node_modules/vue/dist/vue.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/js/swiper.min.js"></script>
+    <script src="../js/layer.js"></script>
+    <script src="../js/call.js"></script>
+    <script>
+        var mySwiper = new Swiper('.swiper-container', {
+            direction: 'horizontal',
+            loop: true,
+            autoplay: true
+        })
+        var vm = new Vue({
+            el: ".publish_content",
+            data: {
+                contents: [
+                    { href: './publish_content.html', img: '../images/publish_left01.png', title: '做海藻肥,我们是认真的!', date: '2018-05-16' },
+                    { href: './publish_content.html', img: '../images/publish_left02.png', title: '做海藻肥,我们是认真的!', date: '2018-05-16' },
+                    { href: './publish_content.html', img: '../images/publish_left03.png', title: '做海藻肥,我们是认真的!做海藻肥,我们是认真的!', date: '2018-05-16' },
+                    { href: './publish_content.html', img: '../images/publish_left04.png', title: '做海藻肥,我们是认真的!', date: '2018-05-16' },
+                    { href: './publish_content.html', img: '../images/publish_left05.png', title: '做海藻肥,我们是认真的!', date: '2018-05-16' },
+                ]
+            }
+        })
+    </script>
+</body>
+
+</html>

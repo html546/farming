@@ -1,0 +1,149 @@
+@media screen and (min-width:320px) and (max-width:359px) and (orientation:portrait) {
+    html {
+        font-size: 625%;
+    }
+}
+
+@media screen and (min-width:360px) and (max-width:374px) and (orientation:portrait) {
+    html {
+        font-size: 703%;
+    }
+}
+
+@media screen and (min-width:375px) and (max-width:383px) and (orientation:portrait) {
+    html {
+        font-size: 732.4%;
+    }
+}
+
+@media screen and (min-width:384px) and (max-width:399px) and (orientation:portrait) {
+    html {
+        font-size: 750%;
+    }
+}
+
+@media screen and (min-width:400px) and (max-width:413px) and (orientation:portrait) {
+    html {
+        font-size: 781.25%;
+    }
+}
+
+@media screen and (min-width:414px) and (max-width:431px) and (orientation:portrait) {
+    html {
+        font-size: 808.6%;
+    }
+}
+
+@media screen and (min-width:432px) and (max-width:479px) and (orientation:portrait) {
+    html {
+        font-size: 843.75%;
+    }
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.page1 {
+    width: 100%;
+    height: 100%;
+}
+
+.page1 .bg_img {
+    display: block;
+    width: 100%;
+    height: 100vh;
+    /*background-image: url(../images/background1.jpg);*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.fix{
+    position:fixed;
+    top:0;
+    left: 0;
+    z-index:10000;
+}
+.fix .polygon {
+    width: 2.28rem;
+    height: 2.16rem;
+    position: fixed;
+    /* margin: 1.5rem auto 0; */
+    left: 50%;
+    margin-left:-1.14rem;
+    top: 50%;
+    margin-top: -1.08rem;
+    background-image: url(../images/polygon.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.fix .polygon .abstract {
+    width: .8rem;
+    height: .8rem;
+    border-radius: .05rem;
+    display: block;
+    position: absolute;
+}
+
+.fix .polygon .abstract1 {
+    margin: 0 auto;
+    position: absolute;
+    top: -.75rem;
+    left: .75rem;
+    background: url(../images/组15.png) no-repeat center;
+    background-size: contain;
+}
+
+.fix .polygon .abstract2 {
+    background: url(../images/组16.png) no-repeat center;
+    background-size: contain;
+    position: absolute;
+    top: .27rem;
+    left: -.4rem;
+    float: left;
+}
+
+.fix .polygon .abstract3 {
+    background: url(../images/组17.png) no-repeat center;
+    background-size: contain;
+    position: relative;
+    top: .27rem;
+    left: 1.9rem;
+}
+
+.fix .polygon .abstract4 {
+    background: url(../images/组18.png) no-repeat center;
+    background-size: contain;
+    position: relative;
+    top: .95rem;
+    left: 0;
+    float: left;
+}
+
+.fix .polygon .abstract5 {
+    background: url(../images/组19.png) no-repeat center;
+    background-size: contain;
+    position: relative;
+    top: .95rem;
+    left: 1.55rem;
+}
+
+.fix .polygon .abstract img {
+    margin-top: .075rem;
+    width: .54rem;
+    height: .41rem;
+    margin-left: .125rem;
+}
+.fix .logo{
+    overflow: hidden;
+}
+.fix .logo img {
+    width: 1.15rem;
+    height: .185rem;
+    margin-top: .25rem;
+    margin-left: .2rem;
+    float: left;
+}

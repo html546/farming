@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>产品展示</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/abstract.css">
+    <link rel="stylesheet" href="../css/product.css">
+    <link rel="stylesheet" href="../css/navigate.css">
+</head>
+
+<body>
+    <div class="product_bg"></div>
+    <div class="product_classify">
+        <div class="product_classify_1 clearfix">
+            <div class="title">
+                <h5>分类一</h5>
+                <span>
+                    <a href="./product_list.html">更多&gt;</a>
+                </span>
+            </div>
+            <div class="product_content_1">
+                <a class="box" :href="item.href" v-for="item in product_content_1">
+                    <img :src="item.img" alt="">
+                    <p>{{item.title}}</p>
+                </a>
+            </div>
+        </div>
+        <div class="product_classify_1 clearfix">
+            <div class="title">
+                <h5>分类二</h5>
+                <span>
+                    <a href="./product_list.html">更多&gt;</a>
+                </span>
+            </div>
+            <div class="product_content_1">
+                <a class="box" :href="item.href" v-for="item in product_content_2">
+                    <img :src="item.img" alt="">
+                    <p>{{item.title}}</p>
+                </a>
+            </div>
+        </div>
+        <p class="no_more">没有更多了</p>
+    </div>
+    <div class="navigate">
+        <a href="./index.html">
+
+        </a>
+        <a href="javascript:history.back(-1)"></a>
+        <a href="javascript:;" class="call"></a>
+        <a href="./location.html"></a>
+    </div>
+    <script src="../node_modules/vue/dist/vue.js"></script>
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../js/layer.js"></script>
+    <script src="../js/call.js"></script>
+    <script>
+        let vm = new Vue({
+            el: ".product_classify",
+            data: {
+                product_content_1: [
+                    { href: './product_detail.html', img: '../images/product01.png', title: '硕生蕉靓壮' },
+                    { href: './product_detail.html', img: '../images/product02.png', title: '向日红强化分裂素' },
+                    { href: './product_detail.html', img: '../images/product03.png', title: '硕生柑橘着色' },
+                    { href: './product_detail.html', img: '../images/product04.png', title: '美啦啦强化分裂素' }
+                ],
+                product_content_2: [
+                    { href: './product_detail.html', img: '../images/product01.png', title: '硕生蕉靓壮' },
+                    { href: './product_detail.html', img: '../images/product02.png', title: '向日红强化分裂素' },
+                    { href: './product_detail.html', img: '../images/product03.png', title: '硕生柑橘着色' },
+                    { href: './product_detail.html', img: '../images/product04.png', title: '美啦啦强化分裂素' }
+                ]
+
+            }
+        })
+    </script>
+</body>
+
+</html>

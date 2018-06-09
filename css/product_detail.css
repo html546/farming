@@ -1,0 +1,99 @@
+@media screen and (min-width:320px) and (max-width:359px) and (orientation:portrait) {
+    html {
+        font-size: 625%;
+    }
+}
+
+@media screen and (min-width:360px) and (max-width:374px) and (orientation:portrait) {
+    html {
+        font-size: 703%;
+    }
+}
+
+@media screen and (min-width:375px) and (max-width:383px) and (orientation:portrait) {
+    html {
+        font-size: 732.4%;
+    }
+}
+
+@media screen and (min-width:384px) and (max-width:399px) and (orientation:portrait) {
+    html {
+        font-size: 750%;
+    }
+}
+
+@media screen and (min-width:400px) and (max-width:413px) and (orientation:portrait) {
+    html {
+        font-size: 781.25%;
+    }
+}
+
+@media screen and (min-width:414px) and (max-width:431px) and (orientation:portrait) {
+    html {
+        font-size: 808.6%;
+    }
+}
+
+@media screen and (min-width:432px) and (max-width:479px) and (orientation:portrait) {
+    html {
+        font-size: 843.75%;
+    }
+}
+
+html, body {
+    overflow-y: scroll;
+}
+
+.detail_head {
+    padding: 0 .15rem;
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.detail_head img {
+    width: 1.27rem;
+    height: 2.92rem;
+    margin: .2rem auto .3rem;
+}
+
+.standard {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 .15rem;
+    font-size: .14rem;
+}
+
+.standard h5 {
+    font-size: .15rem;
+}
+
+.standard p {
+    line-height: .25rem;
+}
+
+.standard a img {
+    width: 1.875rem;
+    height: 1.475rem;
+    margin-top: .4rem;
+}
+
+.divider {
+    height: 0;
+    border: 1px dashed #ccc;
+}
+
+.effect {
+    font-size: .14rem;
+    color: #333;
+    padding: 0 .15rem;
+}
+.effect h5{
+    font-size: .15rem;
+    margin-top: .15rem;
+}
+.effect p{
+    word-break: break-all;
+    line-height: .25rem;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>深圳市深绿帅农业科技有限公司</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/navigate.css">
+    <link rel="stylesheet" href="../css/location.css">
+    <style>
+        html {
+            height: 100%;
+        }
+
+        body {
+            height: 100%;
+        }
+
+        #container {
+            height: 100%;
+        }
+        *{
+            font-size: 16px;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container"></div>
+    <div class="navigate">
+        <a href="./index.html">
+        </a>
+        <a href="javascript:history.back(-1)"></a>
+        <a href="javascript:;" class="call"></a>
+        <a href="./location.html"></a>
+    </div>
+    <script src="http://api.map.baidu.com/api?v=2.0&ak=IztG20Co7Yi3jnF5IInukAV2GhOMqU70"></script>
+    <script>
+        var map = new BMap.Map('container');
+        var point = new BMap.Point(118.517311, 35.127031
+        );
+        map.centerAndZoom(point, 16);
+        var myGeo = new BMap.Geocoder();
+        myGeo.getPoint('临沂市河东区中银软件园六牛科技', function (point) {
+            if (point) {
+                map.centerAndZoom(point, 18);
+                map.addOverlay(new BMap.Marker(point));
+            } else {
+                alert('你选择的地址没有解析到结果');
+            }
+        }, '临沂市');
+        map.enableScrollWheelZoom(true);
+    </script>
+</body>
+
+</html>

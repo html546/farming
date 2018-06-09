@@ -1,0 +1,110 @@
+.navigate {
+    position: fixed;
+    bottom: 0;
+}
+
+html, body {
+    overflow-y: scroll;
+    padding-bottom: .4rem;
+}
+
+@media screen and (min-width:320px) and (max-width:359px) and (orientation:portrait) {
+    html {
+        font-size: 625%;
+    }
+}
+
+@media screen and (min-width:360px) and (max-width:374px) and (orientation:portrait) {
+    html {
+        font-size: 703%;
+    }
+}
+
+@media screen and (min-width:375px) and (max-width:383px) and (orientation:portrait) {
+    html {
+        font-size: 732.4%;
+    }
+}
+
+@media screen and (min-width:384px) and (max-width:399px) and (orientation:portrait) {
+    html {
+        font-size: 750%;
+    }
+}
+
+@media screen and (min-width:400px) and (max-width:413px) and (orientation:portrait) {
+    html {
+        font-size: 781.25%;
+    }
+}
+
+@media screen and (min-width:414px) and (max-width:431px) and (orientation:portrait) {
+    html {
+        font-size: 808.6%;
+    }
+}
+
+@media screen and (min-width:432px) and (max-width:479px) and (orientation:portrait) {
+    html {
+        font-size: 843.75%;
+    }
+}
+
+.link_us .logo {
+    background: url(../images/link_logo.png) no-repeat center;
+    background-size: 1.17rem .185rem;
+    width: 100%;
+    height: .185rem;
+    margin: .45rem auto 0;
+}
+
+.logo_text {
+    display: flex;
+    flex-direction: column;
+    color: #333;
+    margin-top: .2rem;
+    padding: 0 .15rem;
+}
+
+.logo_text h3 {
+    font-size: .2rem;
+    color: #333;
+    width: 100%;
+    text-align: center;
+}
+
+.logo_text p {
+    text-align: center;
+    width: 100%;
+    font-size: 0.08rem;
+    color: #333;
+}
+
+.link_content {
+    padding: 0 .15rem;
+}
+
+.link_content p {
+    margin-top: .35rem;
+    font-size: .15rem;
+    color: #333;
+}
+
+.scan {
+    margin-top: .5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.scan img {
+    width: 1.66rem;
+    height: 1.66rem;
+}
+
+.scan p {
+    font-size: .14rem;
+    text-align: center;
+    color: #333;
+    padding-bottom: .5rem;
+}
